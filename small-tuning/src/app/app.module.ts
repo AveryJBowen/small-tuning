@@ -1,18 +1,15 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 
-import { AppComponent } from './app.component';
-import { PitchComponent } from './pitch/pitch.component';
+import { AppComponent } from "./app.component";
+import { PitchComponent } from "./pitch/pitch.component";
+import { PitchFormComponent } from "./pitch-form/pitch-form.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    PitchComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
+  declarations: [AppComponent, PitchComponent, PitchFormComponent],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
