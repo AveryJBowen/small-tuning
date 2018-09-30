@@ -12,4 +12,7 @@ export class PitchFormComponent {
   onSubmit() {
     this.submitted = true;
   }
+  onReset() {
+    this.submitted = false;
+  }
 }

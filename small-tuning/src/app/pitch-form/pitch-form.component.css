@@ -1,0 +1,36 @@
+.form-group {
+  font-family: "Courier New", Courier, monospace;
+}
+
+#lowA {
+  width: 25%;
+  margin: auto;
+}
+
+#label {
+  font-size: 175%;
+  font-weight: bolder;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+#reset {
+  margin-bottom: 5%;
+}
+
+.btn,
+.btn-success {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  margin-top: 2%;
+  background: #f95428;
+  border-color: black;
+  border-width: 3px;
+  color: white;
+}
+
+.alert,
+.alert-danger {
+  width: 25%;
+  margin: auto;
+}

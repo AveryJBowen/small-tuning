@@ -1,7 +1,7 @@
 <div [hidden]="submitted">
   <form (ngSubmit)="onSubmit()" #pitchForm="ngForm">
     <div class="form-group">
-      <label for="lowA">LOW A PITCH</label>
+      <label for="lowA" id="label">LOW A PITCH</label>
       <input type="number" class="form-control" id="lowA" required [(ngModel)]="model.pitch" name="lowA" #name="ngModel">
       <div [hidden]="name.valid || name.pristine" class="alert alert-danger">Number value is required</div>
     </div>
@@ -10,6 +10,6 @@
 </div>
 
 <div [hidden]="!submitted">
-  <!-- TODO: NEED TO SEND INPUT PITCH TO app-pitch COMPONENT -->
-  <app-pitch></app-pitch>
+  <app-pitch [pitchValue]="model.pitch"></app-pitch>
+  <button id="reset" class="btn btn-success" (click)="onReset()">RESET</button>
 </div>
