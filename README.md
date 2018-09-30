@@ -1,4 +1,4 @@
-# Small Tuning
+# Small Bagpipe Pitch Generator
 ## Background:
 Bagpipe chanters are notoriously volatile, and anchor note pitch changes depending on weather conditions, temperature, and other things outside of the player's control.  Bagpipe chanter pitch is not based on an ordinary scale or predictable key.
 ## Purpose:
