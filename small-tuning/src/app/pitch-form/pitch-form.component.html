@@ -1,7 +1,7 @@
 <div [hidden]="submitted">
   <form (ngSubmit)="onSubmit()" #pitchForm="ngForm">
     <div class="form-group">
-      <label for="lowA" id="label">LOW A PITCH</label>
+      <label for="lowA" id="label">LOW A PITCH</label><br>
       <input type="number" class="form-control" id="lowA" required [(ngModel)]="model.pitch" name="lowA" #name="ngModel">
       <div [hidden]="name.valid || name.pristine" class="alert alert-danger">Number value is required</div>
     </div>
